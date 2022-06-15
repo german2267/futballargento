@@ -49,11 +49,11 @@
       <div>
       <form action="../modules/recuPassRepreMod.php" method="post">
 
-<div class="input-group mb-3">
-  <input type="email" class="form-control" placeholder="Ingresar E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" name="correo" required>
-  <div class="input-group-append">
-    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Ingrese Email</span>
   </div>
+  <input type="email" class="form-control" placeholder="" aria-label="email" aria-describedby="basic-addon1" name="correo" required>
 </div>
 
 <div class="input-group mb-3">

@@ -65,7 +65,7 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Ingrese email</span>
   </div>
-  <input type="email" class="form-control" placeholder=".." aria-label="direccion" aria-describedby="basic-addon1" name="correo" Required
+  <input type="email" class="form-control" placeholder=".." aria-label="correo" aria-describedby="basic-addon1" name="correo" Required
 required>
 </div>
 
