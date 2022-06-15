@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.bg-black {
+  background-color: black;
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.btn-lg {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../assets/img/grass.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .round-width {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .round-width {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.round-width {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.mw-200 {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.w-sm-50 {
+  width: 50%;
+}
+
+@media (max-width: 575px) {
+  .w-sm-50 {
+    width: 100%;
+  }
+}
