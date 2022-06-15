@@ -62,10 +62,11 @@
 </div>
 
 <div class="input-group mb-3">
-  <input type="email" class="form-control" placeholder="Ingresar E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" name="correo" required>
-  <div class="input-group-append">
-    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Ingrese email</span>
   </div>
+  <input type="email" class="form-control" placeholder=".." aria-label="direccion" aria-describedby="basic-addon1" name="correo" Required
+required>
 </div>
 
  <div class="input-group mb-3">
