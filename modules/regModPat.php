@@ -127,17 +127,22 @@ if(isset($submitBtn)){
 													$headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
 													"";
 													
-													mail($email,$subject,$txt,$headers);
+													$mail =  mail($email,$subject,$txt,$headers);
+
+													if ($mail){
 													//redireccion a pagina con apartado para inicio de sesion
 												   echo '<script type="text/javascript">
 												   swal({title: "Usuario registrado!",
-												   			text: "Su usuario fue dado de alta con éxito. Su clave es '. $password .', cópiela",
+												   			text: "Su usuario fue dado de alta con éxito. Su clave fue enviada a su email, revise su SPAm",
 												   			type: "success"
 												   	}).then(function(){
 												   		window.location="../login.php";
 												   		});
 
 												   </script>';
+													} else{
+														echo "no";
+													}
 
 												   // echo "su clave es: " . $password;
 
