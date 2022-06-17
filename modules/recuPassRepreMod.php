@@ -58,6 +58,10 @@ $con = conectame();
 
               $rowSql = mysqli_fetch_array($sqlEX);
 
+              $email = $rowSql['email'];
+              $nom = $rowSql['nombre'];
+              $nombre = strtoupper($nom);
+
                 if($sqlEX->num_rows>0){
                   
                   //otorgamiento de contraseña via servicio mailing, en cuanto este hosteado
@@ -78,22 +82,26 @@ $con = conectame();
                       $result = mysqli_query($con, $updateSql);
 
                         if($result){
-                          //si estuviera hosteado se enviario por mailing
-                          // echo 'Tu nueva contraseña es: ' . $pass;
-                          // echo '<br>';
-                          // echo "Tendras que logearte con esta contraseña, reactivar tu usuario y cambiar tu contraseña para acceder a tu usuario";
+                          //funcion mailing
+                          $subject = "futbolargentoproject@gmail.com";
+                          $txt = 'Hola de nuevo '.$nombre.', tu credencial para recuperar tu usuario es: ' . $password;
+                          $headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
+                          "";
+                          
+                          $mail =  mail($email,$subject,$txt,$headers);
+
+                          if ($mail){
 
                           echo '<script> swal({
                                 title: "Usuario Recuperado!",
-                                text: "Tendras que logearte con esta contraseña: '.$pass.' , reactivar tu usuario y cambiar tu contraseña para acceder",
+                                text: "Tendras que logearte con la contraseña que enviamos a tu email, logearte y actualizar tu contraseña para recuperar tu usuario",
                                 icon: "success"
                             }).then(function(){
                               window.location="../login.php";
-                              }); </script>';
-
-                          // echo "<br>";
-
-                          // echo '<br> <button type="button" class="btn btn-outline-info"><a href="../login.php" style="text-decoration:none;">Iniciar Sesion</a></button>';
+                              }); </script>';}
+                              else{
+                                echo "error, el mail no se envió";
+                              }
                         }
 
 

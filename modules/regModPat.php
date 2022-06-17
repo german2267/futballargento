@@ -133,7 +133,7 @@ if(isset($submitBtn)){
 													//redireccion a pagina con apartado para inicio de sesion
 												   echo '<script type="text/javascript">
 												   swal({title: "Usuario registrado!",
-												   			text: "Su usuario fue dado de alta con éxito. Su clave fue enviada a su email, revise su SPAM",
+												   			text: "Su usuario fue dado de alta con éxito. Su clave fue otorgada a su direccion email, revise el SPAM",
 												   			type: "success"
 												   	}).then(function(){
 												   		window.location="../login.php";

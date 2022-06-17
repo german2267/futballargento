@@ -60,6 +60,10 @@ $con = conectame();
 
               $rowSql = mysqli_fetch_array($sqlEX);
 
+              $email = $rowSql['email'];
+              $nom = $rowSql['nombre'];
+              $nombre = strtoupper($nom);
+
                 if($sqlEX->num_rows>0){
                   
                   //otorgamiento de contraseña via servicio mailing, en cuanto este hosteado
@@ -80,10 +84,11 @@ $con = conectame();
                       $result = mysqli_query($con, $updateSql);
 
                         if($result){
-                          //si estuviera hosteado se enviario por mailing
+
+
                           echo '<script> swal({
                                 title: "Usuario Recuperado!",
-                                text: "Tendras que logearte con esta contraseña: '.$pass.' , reactivar tu usuario y cambiar tu contraseña para acceder",
+                                text: "Tendras que logearte con la contraseña que enviamos a tu email, logearte y actualizar tu contraseña para recuperar tu usuario",
                                 icon: "success"
                             }).then(function(){
                               window.location="../login.php";
