@@ -61,6 +61,16 @@ if(isset($submitBtn)){
 
 	$password = SED::decryption($pwd);
 
+	//funcion mailing
+	// the message
+	$msg = "Su clave es:\n" . $password ;
+
+	// use wordwrap() if lines are longer than 70 characters
+	$msg = wordwrap($msg,70);
+
+	// send email
+	mail("fut-arg@mitecnica.com","Asignacion de Clave",$msg);
+
 
 
 	$tipo = 0;
@@ -168,7 +178,7 @@ if(isset($submitBtn)){
 			            echo '<script type="text/javascript">
 												   swal({
 												   			title: "Usuario registrado!",
-												   			text: "Su usuario fue dado de alta con éxito. Su clave es '. $password .', cópiela y active su usuario",
+												   			text: "Su usuario fue dado de alta con éxito. Su clave fue otorgada a su direccion email, revise el SPAM",
 												   			icon: "success"
 												   	}).then(function(){
 												   		window.location="../login.php";
