@@ -139,7 +139,7 @@ $con = conectame();
 
 											//funcion mailing
 					$subject = "futbolargentoproject@gmail.com";
-					$txt = "Hola POSTULANTE!, tu credencial para activar tu usuario es: " . $password;
+					$txt = "Hola REPRESENTANTE!, tu credencial para activar tu usuario es: " . $password;
 					$headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
 					"";
 					
