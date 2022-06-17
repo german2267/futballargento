@@ -65,6 +65,8 @@ $con = conectame();
 
               $rowSql = mysqli_fetch_array($sqlEX);
               $email = $rowSql['email'];
+              $nom = $rowSql['nombre'];
+              $nombre = strtoupper($nom);
 
                 if($sqlEX->num_rows>0){
 
@@ -90,7 +92,7 @@ $con = conectame();
                           //si estuviera hosteado se enviario por mailing
                           //funcion mailing
                           $subject = "futbolargentoproject@gmail.com";
-                          $txt = "Hola de nuevo POSTULANTE!, tu credencial para recuperar tu usuario es: " . $password;
+                          $txt = 'Hola de nuevo '.$nombre.', tu credencial para recuperar tu usuario es: ' . $password;
                           $headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
                           "";
                           
