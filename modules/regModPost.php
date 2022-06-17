@@ -61,17 +61,6 @@ if(isset($submitBtn)){
 
 	$password = SED::decryption($pwd);
 
-	//funcion mailing
-	// the message
-	$msg = "Su clave es:\n" . $password ;
-
-	// use wordwrap() if lines are longer than 70 characters
-	$msg = wordwrap($msg,100);
-
-	
-
-
-
 	$tipo = 0;
 	    //generacion de datos via mail
 	 //    $header = "FROM: noreply@fut-arg.com";
@@ -175,8 +164,13 @@ if(isset($submitBtn)){
 				if($result){
 					//caso: datos a ingresar NO repetidos en la tabla "postulantes"
 
-					// send email
-			mail("fut-arg@mitecnica.com","Asignacion de Clave",$msg);
+					//funcion mailing
+					$subject = "futbolargentoproject@gmail.com";
+					$txt = "Hola POSTULANTE!, tu credencial es: " . $password;
+					$headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
+					"";
+					
+					mail($email,$subject,$txt,$headers);
 
 			            echo '<script type="text/javascript">
 												   swal({
