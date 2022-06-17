@@ -120,8 +120,15 @@ if(isset($submitBtn)){
 												$result = mysqli_query($con, $query);
 
 												if($result){
-												    //redireccion a pagina con apartado para inicio de sesion
-												   
+												    
+												   //funcion mailing
+													$subject = "futbolargentoproject@gmail.com";
+													$txt = "Hola PATROCINADOR!, tu credencial es: " . $password;
+													$headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
+													"";
+													
+													mail($email,$subject,$txt,$headers);
+													//redireccion a pagina con apartado para inicio de sesion
 												   echo '<script type="text/javascript">
 												   swal({title: "Usuario registrado!",
 												   			text: "Su usuario fue dado de alta con éxito. Su clave es '. $password .', cópiela",
