@@ -66,10 +66,9 @@ if(isset($submitBtn)){
 	$msg = "Su clave es:\n" . $password ;
 
 	// use wordwrap() if lines are longer than 70 characters
-	$msg = wordwrap($msg,70);
+	$msg = wordwrap($msg,100);
 
-	// send email
-	mail("fut-arg@mitecnica.com","Asignacion de Clave",$msg);
+	
 
 
 
@@ -175,6 +174,10 @@ if(isset($submitBtn)){
 		
 				if($result){
 					//caso: datos a ingresar NO repetidos en la tabla "postulantes"
+
+					// send email
+			mail("fut-arg@mitecnica.com","Asignacion de Clave",$msg);
+
 			            echo '<script type="text/javascript">
 												   swal({
 												   			title: "Usuario registrado!",
