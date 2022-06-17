@@ -166,11 +166,13 @@ if(isset($submitBtn)){
 
 					//funcion mailing
 					$subject = "futbolargentoproject@gmail.com";
-					$txt = "Hola POSTULANTE!, tu credencial es: " . $password;
+					$txt = "Hola POSTULANTE!, tu credencial para activar tu usuario es: " . $password;
 					$headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
 					"";
 					
-					mail($email,$subject,$txt,$headers);
+					$mail =  mail($email,$subject,$txt,$headers);
+
+					if ($mail){
 
 			            echo '<script type="text/javascript">
 												   swal({
@@ -182,6 +184,9 @@ if(isset($submitBtn)){
 												   		});
 
 												   </script>';
+													} else{
+														echo "error, el mail no se envió";
+													}
 			                
 					  	} 
 

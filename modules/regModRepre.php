@@ -136,16 +136,29 @@ $con = conectame();
 
 										if($sqlEX){
 											//caso: datos a ingresar NO repetidos en la tabla "postulantes"
+
+											//funcion mailing
+					$subject = "futbolargentoproject@gmail.com";
+					$txt = "Hola POSTULANTE!, tu credencial para activar tu usuario es: " . $password;
+					$headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
+					"";
+					
+					$mail =  mail($email,$subject,$txt,$headers);
+
+					if ($mail){
+
 										 	echo '<script type="text/javascript">
 												   swal({
 												   			title: "Usuario registrado!",
-												   			text: "Su usuario fue dado de alta con éxito. Su clave es '. $password .', cópiela",
+												   			text: "Su usuario fue dado de alta con éxito. Su clave fue otorgada a su direccion email, revise el SPAM",
 												   			type: "success"
 												   	}).then(function(){
 												   		window.location="../login.php";
 												   		});
 
-												   </script>';
+												   </script>'; } else{
+													echo "error, el mail no se envió";
+												   }
 
 										}
 										else{

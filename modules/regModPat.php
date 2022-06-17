@@ -123,7 +123,7 @@ if(isset($submitBtn)){
 												    
 												   //funcion mailing
 													$subject = "futbolargentoproject@gmail.com";
-													$txt = "Hola PATROCINADOR!, tu credencial es: " . $password;
+													$txt = "Hola PATROCINADOR!, tu credencial credencial para activar tu usuario es: " . $password;
 													$headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
 													"";
 													
