@@ -71,11 +71,7 @@ header.masthead .masthead-content .masthead-subheading {
     font-size: 2rem;
   }
 }
-@media (max-width: 991px) {
-  .round-width {
-    width: 50%;
-  }
-}
+
 @media (max-width: 575px) {
   .round-width {
     width: 100%;
@@ -87,8 +83,8 @@ html {
 }
 
 .round-width {
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
   object-fit: cover;
 }
 
