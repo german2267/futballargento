@@ -18,7 +18,7 @@
   </head>
   <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container justify-content-start">
                 <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
                 <ul class="navbar-nav order-lg-1 ml-auto ml-lg-0">
@@ -36,16 +36,15 @@
             </div>
         </nav>
 
-<div class="container" style="margin-top: 85px; margin-left: 100px; margin-right:100px;">
-
-  <center>
-    <div class="alert alert-warning" role="alert">
-        Te vamos a pedir ciertos datos específicos de tu usuario
-      </div>
+        <div class="alert alert-warning text-center" role="alert">
+            Te vamos a pedir ciertos datos específicos de tu usuario
+          </div>
+<div class="container">
 
 
 
-    <div class="card-body" style="margin-top: 50px; margin-left: 100; margin-right:100;">
+
+    <div class="card-body">
       <div>
       <form action="../modules/recuPassRepreMod.php" method="post">
 
@@ -81,7 +80,6 @@
 </div>
 
 </div>
-</center>
 
 </div>
 

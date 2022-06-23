@@ -18,7 +18,7 @@
 
     <title>Recuperar Cuenta</title>
   </head>
-  <body background=""> 
+  <body> 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container justify-content-start">
@@ -38,20 +38,14 @@
             </div>
         </nav>
 
-    
+        <div class="alert alert-warning text-center" role="alert">
+            Te vamos a pedir ciertos datos específicos de tu usuario!
+        </div>
+        
   <div class="container">
 
-  <center>
-
-    <div class="alert alert-warning" role="alert">
-        Te vamos a pedir ciertos datos específicos de tu usuario!
-      </div>
-
-
-
-    
     <div class="card-body">
-      <div style=>
+      <div>
       <form action="../modules/recuPassPostMod.php" method="post">
 
     <div class="input-group mb-3">
@@ -103,7 +97,6 @@ required>
 </div>
 
 </div>
-</center>
 
 
 </div>
