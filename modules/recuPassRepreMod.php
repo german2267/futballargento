@@ -44,11 +44,14 @@ $con = conectame();
         if(isset($submitBtn)){
 
             if (!filter_var($emailUser, FILTER_VALIDATE_EMAIL)) {
-                echo '<script> swal("Formato Mail Invalido", {
-                  className: "red-bg",
-                });   </script>';
+              echo '<script> swal({
+                title: "Formato de Email invalido",
+                text: "",
+                icon: "warning"
+            }).then(function(){
+              window.location="../visualMods/recuPassRepre.php";
+              })   </script>';
 
-          echo '<br> <button type="button" class="btn btn-outline-info"><a href="../visualMods/recuPassRepre.php" style="text-decoration:none;">Vover</a></button>';
 
               } else{
 
