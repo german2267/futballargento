@@ -20,7 +20,7 @@
   </head>
   <body background=""> 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <div class="container justify-content-start">
                 <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
                 <ul class="navbar-nav order-lg-1 ml-auto ml-lg-0">
@@ -39,7 +39,7 @@
         </nav>
 
     
-  <div class="container" style="margin-top: 85px; margin-left: 100px; margin-right:100px;">
+  <div class="container">
 
   <center>
 
@@ -50,7 +50,7 @@
 
 
     
-    <div class="card-body" style="margin-top: 50px; margin-left: 240; margin-right:240;">
+    <div class="card-body">
       <div style=>
       <form action="../modules/recuPassPostMod.php" method="post">
 
