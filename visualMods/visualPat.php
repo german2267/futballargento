@@ -110,7 +110,7 @@
             <div class="container">
                 <div class="row align-items-center text-center">
                     <div class="col-lg-6">
-                        <div class="p-5"><img class="img-fluid rounded-circle round-width" src="https://media.istockphoto.com/photos/seven-a-side-football-team-cheering-with-ball-in-the-air-picture-id963295624?k=20&m=963295624&s=612x612&w=0&h=jC5tHo6xbXLvRZ3SfPzWeL9loq0yAucMUmJip7ftYkU=" alt="..." /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle round-width" src="../assets/img/02.jpg" alt="..." /></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
