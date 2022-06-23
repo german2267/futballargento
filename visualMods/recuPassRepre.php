@@ -65,7 +65,7 @@
 
  <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">Telefono del representante</span>
+    <span class="input-group-text" id="basic-addon1">Telefono</span>
   </div>
   <input type="number" class="form-control" placeholder="" aria-label="telefono" aria-describedby="basic-addon1" name="telefono" required>
 </div>
