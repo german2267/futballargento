@@ -18,20 +18,18 @@
 
 <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom mb-3">
-        <div class="container justify-content-start">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
             <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
-            <ul class="navbar-nav order-lg-1 ml-auto ml-lg-0">
-                <li class="nav-item mr-lg-0 mr-4"><a class="nav-link" href="../login.php">Ingresar</a></li>
-            </ul>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="../equipos.html">Equipos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../login.php">Volver 🔙</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="../login.php">Ingresar</a></li>
+
+                    <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
                 </ul>
             </div>
         </div>

@@ -24,39 +24,23 @@
 
     <body>
 
-        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-            <div class="container justify-content-start">
-                <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
-                <ul class="navbar-nav order-lg-1 ml-auto ml-lg-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
+            <div class="flex-grow-0 ml-auto" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../login.php">Volver</a></li>
+
+                    <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="regPat.php">Registrarse como Patrocinador</a></li>
-                        <li class="nav-item"><a class="nav-link" href="regPost.php">Registrarse como Postulante</a></li>
-
-                <!--logout -->
-                    <div>
-                        <form action="../modules/logout.php">
-                        <button class="btn btn-dark" type="submit">
-                            <img style="height: 40px; width: 40px;" src="../assets/img/logout.png">
-                        </button>
-                        </form>
-                    </div>
-                   
-                    </ul>
-
-                    
-
-
-                </div>
             </div>
-        </nav>
+        </div>
+    </nav>
     <!-- /Navbar -->
 
     <!-- Titulo -->
-    <h1 class="text-center display-4 pb-5 mb-2 mt-4"  style="padding-top: 5rem;">FORMULARIO DE REPRESENTANTE</h1>
+    <h1 class="text-center display-4 pb-5 mb-2 mt-4">FORMULARIO DE REPRESENTANTE</h1>
     <!-- !Titulo -->
 
     <!-- !Titulo -->
@@ -112,12 +96,12 @@
                     <input type="text" class="form-control" name="dni" id="validationCustom05" required>
                   </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <label for="validationCustom05">Correo Electronico</label>
-                    <input type="email" class="form-control" name="email" id="validationCustom05" required>
-                  </div>
-
+                
                 <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom05">Correo Electronico</label>
+                        <input type="email" class="form-control" name="email" id="validationCustom05" required>
+                      </div>
                     <div class="col-md-6 mb-3">
                       <label for="inputClubRep">Club Representado</label>
                       <input type="text" class="form-control" name="club_rep" id="inputMail" aria-describedby="emailHelp" required>
@@ -144,7 +128,7 @@
                     </label>
                   </div>
                 </div>
-                <button class="btn" style="background-color: #5da145; color: white;" type="submit" name="submit">Enviar Formulario</button>
+                <button class="btn btn-primary rounded-pill" type="submit" name="submit">Enviar Formulario</button>
 
               </form>
               <!--formulario de registro -->

@@ -20,37 +20,21 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-            <div class="container justify-content-start">
-                <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
-                <ul class="navbar-nav order-lg-1 ml-auto ml-lg-0">
+    <nav class="navbar navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
+            <div class="flex-grow-0 ml-auto" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../login.php">Volver</a></li>
+
+                    <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="regPat.php">Registrarse como Patrocinador</a></li>
-                        <li class="nav-item"><a class="nav-link" href="regRepre.php">Registrarse como Representante</a></li>
-
-                <!--logout -->
-                    <div>
-                        <form action="../modules/logout.php">
-                        <button class="btn btn-dark" type="submit">
-                            <img style="height: 40px; width: 40px;" src="../assets/img/logout.png">
-                        </button>
-                        </form>
-                    </div>
-                   
-                    </ul>
-
-                    
-
-
-                </div>
             </div>
-        </nav>
+        </div>
+    </nav>
     <!-- /Navbar -->
 
-    <h1 class="text-center display-4 pb-5 mb-2 mt-4"  style="padding-top: 5rem;">FORMULARIO DE POSTULANTE</h1>
+    <h1 class="text-center display-4 pb-5 mb-2 mt-4">FORMULARIO DE POSTULANTE</h1>
     
     <div class="container-fluid mt-2 p-0">
         <!-- Body -->
@@ -66,14 +50,12 @@
                     <label for="validationCustom02">Apellido</label>
                     <input type="text" class="form-control" id="validationCustom02" name="apellido" required>
                   </div>
-
-                  <div class="col-md-6 mb-3">
-                    <label for="validationCustom02">Dni</label>
-                    <input type="number" class="form-control" id="validationCustom02" name="dni" required>
-                  </div>
-
                 </div>
                 <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom02">Dni</label>
+                      <input type="number" class="form-control" id="validationCustom02" name="dni" required>
+                    </div>
                   <div class="col-md-6 mb-3">
                     <label for="validationCustom04">Provincia</label>
                     <select class="custom-select" id="validationCustom04" name="provincia" required>
@@ -104,24 +86,22 @@
                       <option value="TUCUMAN">Tucumán</option>
                     </select>
                   </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="validationCustom05">Localidad</label>
-                    <input type="text" class="form-control" id="validationCustom05" name="localidad" required>
-                  </div>
-                  
                 </div>
                 <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationCustom05">Localidad</label>
+                      <input type="text" class="form-control" id="validationCustom05" name="localidad" required>
+                    </div>
                     <div class="col-md-6 mb-3">
                         <label for="inputFechan">Fecha de Nacimiento</label> 
                         <input type="date" class="form-control" id="inputFechan" name="fechan" required>
                     </div>
-
+                </div>
+                <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="inputTel">Teléfono</label> 
                         <input type="number" class="form-control" id="inputTelefono" name="telefono" required maxlength="12">
                     </div>
-                </div>
-                <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="selectPosicion">Posicion de Equipo Preferida</label>
                         <select class="custom-select" id="selectPosicion" name="posicion" required>
@@ -136,12 +116,12 @@
                             <option value="EXTREMO DERECHO">Extremo Derecho</option>
                         </select>
                     </div>
+                </div>
+                <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="inputDireccion">Dirección</label>
                         <input type="text" class="form-control" id="inputDireccion" name="direccion" required>
                     </div>
-                </div>
-                <div class="form-row">
                     <!--<div class="col-md-6 mb-3">-->
                     <!--    <label for="inputContra">Contraseña</label>-->
                     <!--    <input type="password" class="form-control" id="inputContra" name="password" required>-->
@@ -165,7 +145,7 @@
                     </label>
                   </div>
                 </div>
-                <button class="btn" style="background-color: #5da145; color: white;" type="submit" name="submit">Enviar Formulario</button>
+                <button class="btn btn-primary rounded-pill" type="submit" name="submit">Enviar Formulario</button>
               </form>
               <!--!form-->
         </div>

@@ -18,25 +18,20 @@
   </head>
   <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-            <div class="container justify-content-start">
-                <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
-                <ul class="navbar-nav order-lg-1 ml-auto ml-lg-0">
+  <nav class="navbar navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
+            <div class="flex-grow-0 ml-auto" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="recuperarCuenta.php">Volver</a></li>
+
+                    <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        
-                        <li class="nav-item"><a class="nav-link" href="recuperarCuenta.php">Volver 🔙</a></li>
-
-                
-                   
-                    </ul>
-                </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="alert alert-warning text-center" role="alert">
+        <div class="alert alert-primary text-center" role="alert">
             Te vamos a pedir ciertos datos específicos de tu usuario
           </div>
 <div class="container">
@@ -49,29 +44,20 @@
       <form action="../modules/recuPassRepreMod.php" method="post">
 
   <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">Ingrese Email</span>
-  </div>
-  <input type="email" class="form-control" placeholder="" aria-label="email" aria-describedby="basic-addon1" name="correo" required>
+  <input type="email" class="form-control" placeholder="Ingrese Email" aria-label="email" aria-describedby="basic-addon1" name="correo" required>
 </div>
 
 <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">Ingrese Dni</span>
-  </div>
-  <input type="" class="form-control" placeholder="" aria-label="dni" aria-describedby="basic-addon1" name="dni" required>
+  <input type="" class="form-control" placeholder="Ingrese Dni" aria-label="dni" aria-describedby="basic-addon1" name="dni" required>
 </div>
 
 
  <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">Telefono</span>
-  </div>
-  <input type="number" class="form-control" placeholder="" aria-label="telefono" aria-describedby="basic-addon1" name="telefono" required>
+  <input type="number" class="form-control" placeholder="Teléfono" aria-label="telefono" aria-describedby="basic-addon1" name="telefono" required>
 </div>
 
 <div class="input-group mb-3">
-  <button type="submit" name="submit" class="btn btn-outline-dark">Consultar recuperacion</button>
+  <button type="submit" name="submit" class="btn btn-primary rounded-pill">Consultar recuperacion</button>
 </div>
 
 
