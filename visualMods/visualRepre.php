@@ -19,6 +19,8 @@
         <meta name="author" content="" />
         <title>Fútbol Argento - Inicio</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
@@ -36,7 +38,7 @@
                 </button>
                 <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="../modules/logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="../modules/logout.php"><i class="fas fa-sign-out-alt fa-lg"></i></a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
                     </ul>
                 </div>
