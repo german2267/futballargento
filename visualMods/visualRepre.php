@@ -29,30 +29,18 @@
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-            <div class="container justify-content-start">
+            <div class="container">
                 <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../modules/logout.php"><i class="fas fa-sign-out-alt"></i></a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
                     </ul>
-
-                    <!--logout -->
-                    <div>
-                        <form action="../modules/logout.php">
-                        <button class="btn btn-dark" type="submit">
-                            <img style="height: 40px; width: 40px;" src="../assets/img/logout.png">
-                        </button>
-                        </form>
-                    </div>
-                    <!--!logout -->
-
                 </div>
             </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         </nav>
 
         <header class="masthead text-center text-white">

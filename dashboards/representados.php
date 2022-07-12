@@ -59,39 +59,24 @@ session_start();
     <body>
 
         <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container justify-content-start">
-            <a class="navbar-brand" href="index.html">Fútbol Argento</a>
-            <ul class="navbar-nav order-lg-1 ml-auto ml-lg-0">
-                 <!--logout -->
-                    <div>
-                        
-                        <button class="btn btn-dark" onclick="volver();">
-                            <img style="height: 40px; width: 40px;" src="../assets/img/logout.png">
-                        </button>
-                        
-                    </div>
-            </ul>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../equipos.html">Equipos</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Fútbol Argento</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0 ml-auto" id="navbarResponsive">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../visualMods/visualRepre.php">Volver</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="../visualMods/visualRepre.php"><i class="fas fa-sign-out-alt"></i></a></li>-->
+                        <!-- <li class="nav-item"><a class="nav-link" href="visualMods/galeria.html">Galeria</a></li> -->
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    
-    <br>
-    <br>
-    <br>
+        </nav>
 
-    <h1 class="text-center display-4 pb-5 mb-2 mt-4"  style="padding-top: 5rem;"><?php echo"Hola " . $_SESSION['nombre']; ?>, Aqui verás a tus prospectos de interés</h1>
+        <h1 class="text-center display-4 pb-5 mb-2 mt-5"  style="padding-top: 5rem;"><?php echo"Hola " . $_SESSION['nombre']; ?>, Aqui verás a tus prospectos de interés</h1>
      
-
-        <center>
         <div class="container mt-5">
             <div class="card mt-4">
                 <div class="card-body">
@@ -173,7 +158,6 @@ session_start();
         </div>
     </div>
 </div>
-</center>
 <!-- Footer-->
     <footer class="py-5 bg-black">
         <div class="container">
