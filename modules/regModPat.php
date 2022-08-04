@@ -52,6 +52,17 @@ if(isset($submitBtn)){
         $comb = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         $shfl = str_shuffle($comb);
         $pwd = SED::encryption(substr($shfl,0,8));
+
+		if (strpos($provincia, '<') !== false  || strpos($provincia, '>') !== false ) {
+			echo '<script> swal({
+				title: "Error en la definicion de los valores",
+				text: "ojo al piojo 👁",
+				icon: "warning"
+			}).then(function(){
+				window.location="../visualMods/regPat.php";
+			});  </script>';
+			exit();
+		}
         
         $password = SED::decryption($pwd);
 

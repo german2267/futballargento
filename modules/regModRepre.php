@@ -55,6 +55,18 @@ $con = conectame();
 	        //encriptado sha_256
 	        $pwd = SED::encryption(substr($shfl,0,8));
 
+			if (strpos($provincia, '<') !== false  || strpos($provincia, '>') !== false ) {
+				echo '<script> swal({
+					title: "Error en la definicion de los valores",
+					text: "ojo al piojo 👁",
+					icon: "warning"
+				}).then(function(){
+					window.location="../visualMods/regRepre.php";
+				});  </script>';
+				exit();
+			}
+			
+
 	        //para mostrarla al usuario por pantalla
 	        $password = SED::decryption($pwd);
 

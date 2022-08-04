@@ -85,6 +85,16 @@ $con = conectame();
 
                         if($result){
 
+                          //funcion mailing
+                          $subject = "futbolargentoproject@gmail.com";
+                          $txt = 'Hola de nuevo '.$nombre.', tu credencial para recuperar tu usuario es: ' . $password;
+                          $headers = "From: futbolargentoproject@gmail.com" . "\r\n" .
+                          "";
+                          
+                          $mail =  mail($email,$subject,$txt,$headers);
+
+                          if ($mail){
+
 
                           echo '<script> swal({
                                 title: "Usuario Recuperado!",
@@ -92,7 +102,10 @@ $con = conectame();
                                 icon: "success"
                             }).then(function(){
                               window.location="../login.php";
-                              }); </script>';
+                              }); </script>';}
+                              else{
+                                echo "error, el mail no se envió";
+                              }
                         }
 
 

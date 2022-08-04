@@ -89,7 +89,6 @@ $con = conectame();
                       $result = mysqli_query($con, $updateSql);
 
                         if($result){
-                          //si estuviera hosteado se enviario por mailing
                           //funcion mailing
                           $subject = "futbolargentoproject@gmail.com";
                           $txt = 'Hola de nuevo '.$nombre.', tu credencial para recuperar tu usuario es: ' . $password;
