@@ -74,11 +74,11 @@
         <div class="container bg-white p-2 needs-validation logueo" style="border: 1px solid #d0d0d0; max-width: 500px; height: 360px; margin-top: 100px;">
             <button class="btn btn-primary linkSalir"><i class="fas fa-reply"></i></button>
             <hr>
-            <a href="visualMods/regPost.php" class="d-block">Quiero registrarme como postulante</a>
+            <a href="visualMods/cometPost.php" class="d-block">Quiero registrarme como postulante</a>
             <hr>
             <a href="visualMods/regPat.php" class="d-block">Quiero registrarme como patrocinador</a>
             <hr>
-            <a href="visualMods/regRepre.php" class="d-block">Quiero registrarme como representante</a>
+            <a href="visualMods/cometRepre.php" class="d-block">Quiero registrarme como representante</a>
             <hr>
         </div>
         <!-- /Registro -->

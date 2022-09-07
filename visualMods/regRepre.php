@@ -124,7 +124,7 @@
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                     <label class="form-check-label" for="invalidCheck">
-                      Acepto los <a href="../pol-priv.html" target="_blank">terminos y condiciones</a>
+                      Acepto los <a href="../pol-priv.php" target="_blank">terminos y condiciones</a>
                     </label>
                   </div>
                 </div>

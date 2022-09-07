@@ -108,3 +108,18 @@ html {
 .pointer {
   cursor: pointer;
 }
+
+.imgAbsolute {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 10rem;
+}
+
+@media (max-width: 767px) {
+  .imgAbsolute {
+    display: none;
+  }
+}
